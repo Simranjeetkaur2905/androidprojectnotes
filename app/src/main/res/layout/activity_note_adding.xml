@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".note_adding"
+    android:background="#3478"
+    android:layout_margin="20dp"
+    android:orientation="vertical"
+    >
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:text="@string/add_a_new_note"
+        android:id="@+id/newnote"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+    <EditText
+            android:id="@+id/edittextnotename"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/newnote"
+            android:background="#999"
+            android:hint="Note"
+            android:textStyle="italic" />
+
+
+        <EditText
+            android:id="@+id/edittextdesc"
+            android:layout_width="match_parent"
+            android:layout_height="234dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/edittextnotename"
+            android:background="#999"
+            android:gravity="top"
+            android:hint="Description"
+            android:textStyle="italic"
+
+            />
+
+
+        <!--        <EditText-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:id="@+id/edittextphone"-->
+        <!--            android:layout_marginTop="10dp"-->
+        <!--            android:inputType="phone"-->
+        <!--            android:background="#999"-->
+        <!--            android:hint="Enter the person Phone number"-->
+        <!--            android:textStyle="italic"-->
+        <!--            />-->
+
+
+        <!--        <EditText-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:id="@+id/edittextaddress"-->
+        <!--            android:layout_marginTop="10dp"-->
+        <!--            android:background="#999"-->
+        <!--            android:hint="Enter the person' address"-->
+        <!--            android:textStyle="italic"/>-->
+
+        <!--        <Button-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:id="@+id/btnaddperson"-->
+        <!--            android:layout_marginTop="10dp"-->
+        <!--            android:background="@color/colorPrimary"-->
+        <!--            android:text="@string/add_person"/>-->
+
+        <!--        <TextView-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:id="@+id/tvviewperson"-->
+        <!--            android:padding="16dp"-->
+        <!--            android:layout_marginTop="20dp"-->
+        <!--            android:background="@color/colorPrimary"-->
+        <!--            android:text="@string/view_person_information"-->
+        <!--            android:textAlignment="center"-->
+        <!--            android:textAppearance="@style/TextAppearance.AppCompat.Medium"-->
+        <!--            android:textStyle="bold"/>-->
+
+
+
+
+
+
+</RelativeLayout>
