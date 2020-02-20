@@ -8,11 +8,21 @@
     android:background="#ccc"
     tools:context=".MainActivity">
 
+
+
     <SearchView
         android:id="@+id/searchbar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="#fff"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/addnewnotes"
+        android:background="@color/colorPrimary"
+        android:text="ADD"/>
+
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -21,7 +31,7 @@
     <ListView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/lvpersons"
+        android:id="@+id/lvnotes"
         android:background="#ccc"
         />
 

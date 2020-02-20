@@ -45,46 +45,57 @@
             />
 
 
-        <!--        <EditText-->
-        <!--            android:layout_width="match_parent"-->
-        <!--            android:layout_height="wrap_content"-->
-        <!--            android:id="@+id/edittextphone"-->
-        <!--            android:layout_marginTop="10dp"-->
-        <!--            android:inputType="phone"-->
-        <!--            android:background="#999"-->
-        <!--            android:hint="Enter the person Phone number"-->
-        <!--            android:textStyle="italic"-->
-        <!--            />-->
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/edittextdate"
+                    android:layout_marginTop="10dp"
+                    android:inputType="phone"
+                    android:background="#999"
+                    android:layout_below="@+id/edittextdesc"
+                    android:hint="date"
+                    android:textStyle="italic"
+                    />
 
 
-        <!--        <EditText-->
-        <!--            android:layout_width="match_parent"-->
-        <!--            android:layout_height="wrap_content"-->
-        <!--            android:id="@+id/edittextaddress"-->
-        <!--            android:layout_marginTop="10dp"-->
-        <!--            android:background="#999"-->
-        <!--            android:hint="Enter the person' address"-->
-        <!--            android:textStyle="italic"/>-->
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/edittexttime"
+                    android:layout_marginTop="10dp"
+                    android:background="#999"
+                    android:layout_below="@+id/edittextdate"
+                    android:hint="time"
+                    android:textStyle="italic"/>
 
-        <!--        <Button-->
-        <!--            android:layout_width="match_parent"-->
-        <!--            android:layout_height="wrap_content"-->
-        <!--            android:id="@+id/btnaddperson"-->
-        <!--            android:layout_marginTop="10dp"-->
-        <!--            android:background="@color/colorPrimary"-->
-        <!--            android:text="@string/add_person"/>-->
+    <Button
+        android:id="@+id/btnaddperson"
+        android:layout_width="55dp"
+        android:layout_marginLeft="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edittexttime"
+        android:layout_marginTop="20dp"
+        android:background="@color/colorPrimary"
+        android:text="@string/add_Notes" />
 
-        <!--        <TextView-->
-        <!--            android:layout_width="match_parent"-->
-        <!--            android:layout_height="wrap_content"-->
-        <!--            android:id="@+id/tvviewperson"-->
-        <!--            android:padding="16dp"-->
-        <!--            android:layout_marginTop="20dp"-->
-        <!--            android:background="@color/colorPrimary"-->
-        <!--            android:text="@string/view_person_information"-->
-        <!--            android:textAlignment="center"-->
-        <!--            android:textAppearance="@style/TextAppearance.AppCompat.Medium"-->
-        <!--            android:textStyle="bold"/>-->
+    <TextView
+        android:id="@+id/tvviewperson"
+        android:layout_width="60dp"
+        android:layout_height="48dp"
+        android:layout_below="@+id/edittexttime"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="257dp"
+        android:layout_marginLeft="257dp"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@+id/btnaddperson"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        android:padding="16dp"
+        android:text="@string/notes"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textStyle="italic" />
 
 
 

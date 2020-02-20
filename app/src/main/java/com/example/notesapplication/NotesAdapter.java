@@ -51,7 +51,22 @@ public class NotesAdapter extends ArrayAdapter {
         phone.setText(person.getDate());
         address.setText(person.getTime());
 
+        v.findViewById(R.id.btn_edit_person).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                updatePerson(person);
+            }
+        });
+        v.findViewById(R.id.btn_delete_person).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                deleteNote(person);
+            }
+        });
 
+
+
+return v;
 
     }
 
@@ -118,24 +133,24 @@ public class NotesAdapter extends ArrayAdapter {
 
         final EditText etnotesname = v.findViewById(R.id.edittextnotename);
         final EditText etdes = v.findViewById(R.id.edittextdesc);
-//        final EditText etphone = v.findViewById(R.id.edittextphone);
-//        final EditText etaddress = v.findViewById(R.id.edittextaddress);
+        final EditText etphone = v.findViewById(R.id.edittextdate);
+        final EditText etaddress = v.findViewById(R.id.edittexttime);
 
         // String[] deptarray = mContext.getResources().getStringArray(R.array.departments);
         // int position = Arrays.asList(deptarray).indexOf(employee.getDept());
 
         etnotesname.setText(note.getNameofnote());
         etdes.setText(note.getDescription());
-//        etphone.setText(person.getPhone());
-//        etaddress.setText(person.getAddress());
+        etphone.setText(note.getDate());
+        etaddress.setText(note.getTime());
 
-        v.findViewById(R.id.btn_update_person).setOnClickListener(new View.OnClickListener() {
+        v.findViewById(R.id.btnupdateperson).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 String notes_name = etnotesname.getText().toString().trim();
                 String descr = etdes.getText().toString().trim();
-//                String phone_number = etphone.getText().toString().trim();
-//                String address_person = etaddress.getText().toString().trim();
+                String phone_number = etphone.getText().toString().trim();
+                String address_person = etaddress.getText().toString().trim();
 
 
 
@@ -167,7 +182,7 @@ public class NotesAdapter extends ArrayAdapter {
                 Toast.makeText(mContext, "employee update", Toast.LENGTH_SHORT).show();
 
  */
-                if(mDataBase.updateNote(note.getId(),notes_name,descr,date,time)){
+                if(mDataBase.updateNote(note.getId(),notes_name,descr,phone_number,address_person)){
                     Toast.makeText(mContext, "employee update", Toast.LENGTH_SHORT).show();
                     loadPersons();
                 }
@@ -183,4 +198,4 @@ public class NotesAdapter extends ArrayAdapter {
 
 
     }
-}
+    }

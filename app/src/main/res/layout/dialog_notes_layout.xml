@@ -36,5 +36,41 @@
         android:textStyle="italic"
 
         />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edittextdate"
+        android:layout_marginTop="10dp"
+        android:inputType="phone"
+        android:background="#999"
+        android:layout_below="@+id/edittextdesc"
+        android:hint="date"
+        android:textStyle="italic"
+        />
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edittexttime"
+        android:layout_marginTop="10dp"
+        android:background="#999"
+        android:layout_below="@+id/edittextdate"
+        android:hint="time"
+        android:textStyle="italic"/>
+
+    <Button
+        android:id="@+id/btnupdateperson"
+        android:layout_width="55dp"
+        android:layout_marginLeft="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edittexttime"
+        android:layout_marginTop="200dp"
+        android:background="@color/colorPrimary"
+        android:text="@string/add_Notes" />
+
+
+
+
 
 </LinearLayout>
